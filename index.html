@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="Banner.png">
+  <meta name="description" content="FreeFireStore - Compre contas de Free Fire com segurança e preços justos. Nosso site está em construção e será lançado em breve.">
+  <meta name="keywords" content="Free Fire, Vendas de Contas, Comprar Contas Free Fire, Free Fire Contas Seguras, Free Fire Store">
+  <meta name="author" content="FreeFireStore">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <title>FreeFireStore | Vendas de Contas Free Fire</title>
+</head>
+<body>
+  <header>
+    <div class="logo">FreeFireStore</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <aside id="menu" class="menu">
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#contas">Contas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </aside>
+
+  <main onclick="closeMenu()">
+    <br>
+    <div class="banner">
+      <img src="Banner.png" alt="Banner do FreeFireStore">
+    </div>
+    <section class="content">
+      <h1>Bem-vindo ao FreeFireStore</h1>
+      <p>Nosso site está em construção e em breve será lançado. Prepare-se para comprar as melhores contas de Free Fire com segurança e preços justos!</p>
+      <button>EM BREVE</button>
+    </section>
+  </main>
+
+  <script>
+  
+let nome = localStorage.getItem("nome")
+if(!localStorage.getItem("nome")) {
+nome = prompt("SEU NOME:")
+localStorage.setItem("nome",nome)
+}
+  
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("open");
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.remove("open");
+    }
+    
+  </script>
+</body>
+</html>
