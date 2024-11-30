@@ -5,6 +5,14 @@ let ano = data.getFullYear()
 let hora = data.getHours()
 let minutos = data.getMinutes()
 
+if (dia != diaAnterior) {
+
+  diaAnterior = dia
+  localStorage.setItem("diaAnterior",diaAnterior)
+
+enviar()
+}
+
 let Dados = {
 nome: localStorage.getItem("nome") || "sem nome",
 
@@ -15,6 +23,8 @@ Horário: `${hora} : ${minutos}`
 }
 
 const url = "https://api.sheetmonkey.io/form/iYhdxWckkGUXM6bGP5cy7p"
+
+function enviar() {
 
 fetch(url, {
 
@@ -29,3 +39,4 @@ body: JSON.stringify(Dados)
 .then(dt => {
 console.log("Dados enviados")
 }).catch(erro => console.log("Erro no envio de dados",erro))
+}
