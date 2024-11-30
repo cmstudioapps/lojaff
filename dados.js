@@ -26,4 +26,4 @@ body: JSON.stringify(Dados)
 }).then(response => response.json())
 .then(dt => {
 console.log("Dados enviados")
-}).catch(erro => console.log("Erro no envio de dados",erro)
+}).catch(erro => console.log("Erro no envio de dados",erro))
