@@ -10,7 +10,7 @@ let diaAnterior = localStorage.getItem ("diaAnterior")
 let Dados = {
 nome: localStorage.getItem("nome") || "sem nome",
 
-Dia: `${dia}/${mes}/${ano}`, 
+Dia: String(`${dia}/${mes}/${ano}`), 
 Horário: `${hora} : ${minutos}`
 
 
