@@ -4,7 +4,7 @@ let dia = data.getDate()
 let ano = data.getFullYear()
 let hora = data.getHours()
 let minutos = data.getMinutes()
-
+let diaAnterior = localStorage.getItem ("diaAnterior")
 
 
 let Dados = {
