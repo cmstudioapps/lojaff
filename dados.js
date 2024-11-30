@@ -19,6 +19,9 @@ const url = "https://api.sheetmonkey.io/form/iYhdxWckkGUXM6bGP5cy7p"
 fetch(url, {
 
 method: "POST",
+headers: {
+  "Content-Type": "application/json",
+},
 body: JSON.stringify(Dados)
 
 
