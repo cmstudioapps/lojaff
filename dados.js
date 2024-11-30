@@ -8,10 +8,9 @@ let minutos = data.getMinutes()
 let Dados = {
 nome: localStorage.getItem("nome") || "sem nome",
 
-Data: {
 Dia: `${dia}/${mes}/${ano}`, 
 Horário: `${hora} : ${minutos}`
-}
+
 
 }
 
